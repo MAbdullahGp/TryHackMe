@@ -1,0 +1,11 @@
+The quick brown 0fox jumps over 0the lazy 0dog.
+(This is a sentence inside parentheses.)
+Duplicate line to remove
+Duplicate line to remove
+{ "name": "vim-user", "id": 100, "active": true }
+Line with a number 42 to increment.
+1. First item
+2. Second item
+3. Third item
+A line with spelling mstakes to fix using z equals.
+End of the test document.
