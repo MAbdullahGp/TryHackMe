@@ -1,0 +1,18 @@
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+# OR if python3 isn't available:
+python -c 'import pty; pty.spawn("/bin/bash")'
+
+
+
+Ctrl + Z
+
+
+stty raw -echo; fg
+
+export TERM=xterm
+export SHELL=bash //idk what is this
+
+
+//find size with stty size
+
+stty rows 41 columns 166
