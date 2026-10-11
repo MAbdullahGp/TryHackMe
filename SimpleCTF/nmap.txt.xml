@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Sun Oct 11 12:34:52 2026 as: nmap -vvv -p 21,80,2222 -4 -sC -sV -oA nmap.txt 10.49.142.241 -->
+<nmaprun scanner="nmap" args="nmap -vvv -p 21,80,2222 -4 -sC -sV -oA nmap.txt 10.49.142.241" start="1791704092" startstr="Sun Oct 11 12:34:52 2026" version="7.95" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="21,80,2222"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1791704092"/>
+<taskend task="NSE" time="1791704092"/>
+<taskbegin task="NSE" time="1791704092"/>
+<taskend task="NSE" time="1791704092"/>
+<taskbegin task="NSE" time="1791704092"/>
+<taskend task="NSE" time="1791704092"/>
+<taskbegin task="Ping Scan" time="1791704092"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.49.142.241" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1791704092" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1791704092"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1791704092"/>
+<taskbegin task="Connect Scan" time="1791704092"/>
+<taskend task="Connect Scan" time="1791704093" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1791704093"/>
+<taskend task="Service scan" time="1791704099" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1791704099"/>
+<taskprogress task="NSE" time="1791704130" percent="99.77" remaining="1" etc="1791704130"/>
+<taskend task="NSE" time="1791704130"/>
+<taskbegin task="NSE" time="1791704130"/>
+<taskend task="NSE" time="1791704132"/>
+<taskbegin task="NSE" time="1791704132"/>
+<taskend task="NSE" time="1791704132"/>
+<host starttime="1791704092" endtime="1791704132"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.49.142.241" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="vsftpd" version="3.0.3" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.3</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;Can&apos;t get directory listing: TIMEOUT"/><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to ::ffff:192.168.131.127&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to ::ffff:192.168.131.127&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-robots.txt" output="2 disallowed entries &#xa;/ /openemr-5_0_1_3 "/><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-title" output="Apache2 Ubuntu Default Page: It works"><elem key="title">Apache2 Ubuntu Default Page: It works</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="2222"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.8" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 29:42:69:14:9e:ca:d9:17:98:8c:27:72:3a:cd:a9:23 (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCj5RwZ5K4QU12jUD81IxGPdEmWFigjRwFNM2pVBCiIPWiMb+R82pdw5dQPFY0JjjicSysFN3pl8ea2L8acocd/7zWke6ce50tpHaDs8OdBYLfpkh+OzAsDwVWSslgKQ7rbi/ck1FF1LIgY7UQdo5FWiTMap7vFnsT/WHL3HcG5Q+el4glnO4xfMMvbRar5WZd4N0ZmcwORyXrEKvulWTOBLcoMGui95Xy7XKCkvpS9RCpJgsuNZ/oau9cdRs0gDoDLTW4S7OI9Nl5obm433k+7YwFeoLnuZnCzegEhgq/bpMo+fXTb/4ILI5bJHJQItH2Ae26iMhJjlFsMqQw0FzLf&#xa;  256 9b:d1:65:07:51:08:00:61:98:de:95:ed:3a:e3:81:1c (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBM6Q8K/lDR5QuGRzgfrQSDPYBEBcJ+/2YolisuiGuNIF+1FPOweJy9esTtstZkG3LPhwRDggCp4BP+Gmc92I3eY=&#xa;  256 12:65:1b:61:cf:4d:e5:75:fe:f4:e8:d4:6e:10:2a:f6 (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ2I73yryK/Q6UFyvBBMUJEfznlIdBXfnrEqQ3lWdymK"><table>
+<elem key="fingerprint">294269149ecad917988c27723acda923</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCj5RwZ5K4QU12jUD81IxGPdEmWFigjRwFNM2pVBCiIPWiMb+R82pdw5dQPFY0JjjicSysFN3pl8ea2L8acocd/7zWke6ce50tpHaDs8OdBYLfpkh+OzAsDwVWSslgKQ7rbi/ck1FF1LIgY7UQdo5FWiTMap7vFnsT/WHL3HcG5Q+el4glnO4xfMMvbRar5WZd4N0ZmcwORyXrEKvulWTOBLcoMGui95Xy7XKCkvpS9RCpJgsuNZ/oau9cdRs0gDoDLTW4S7OI9Nl5obm433k+7YwFeoLnuZnCzegEhgq/bpMo+fXTb/4ILI5bJHJQItH2Ae26iMhJjlFsMqQw0FzLf</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="fingerprint">9bd165075108006198de95ed3ae3811c</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBM6Q8K/lDR5QuGRzgfrQSDPYBEBcJ+/2YolisuiGuNIF+1FPOweJy9esTtstZkG3LPhwRDggCp4BP+Gmc92I3eY=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="fingerprint">12651b61cf4de575fef4e8d46e102af6</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIJ2I73yryK/Q6UFyvBBMUJEfznlIdBXfnrEqQ3lWdymK</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="219068" rttvar="103319" to="632344"/>
+</host>
+<taskbegin task="NSE" time="1791704132"/>
+<taskend task="NSE" time="1791704132"/>
+<taskbegin task="NSE" time="1791704132"/>
+<taskend task="NSE" time="1791704132"/>
+<taskbegin task="NSE" time="1791704132"/>
+<taskend task="NSE" time="1791704132"/>
+<runstats><finished time="1791704132" timestr="Sun Oct 11 12:35:32 2026" summary="Nmap done at Sun Oct 11 12:35:32 2026; 1 IP address (1 host up) scanned in 40.59 seconds" elapsed="40.59" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

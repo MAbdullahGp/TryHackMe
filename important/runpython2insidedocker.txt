@@ -1,0 +1,1 @@
+docker run --rm -it -v "$(pwd)":/app python:2.7 bash
