@@ -1,0 +1,8 @@
+ports :
+
+29536
+8080
+22
+
+
+(echo "< open vcan0 >"; sleep 1; echo "< rawmode >"; sleep 1; echo "< send 421 8 1e e5 2d 99 b6 59 3f 76 >"; cat) | nc 10.49.169.204 29536

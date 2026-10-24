@@ -17,7 +17,7 @@ export SHELL=bash //idk what is this
 
 //find size with stty size
 
-stty rows 41 columns 166
+stty rows 33 columns 150
 
 
 

