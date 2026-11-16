@@ -1,2 +1,27 @@
+# OpenVPN configuration & credentials
 *.ovpn
 
+# Python virtual environments & bytecode
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary & backup files
+*.save
+*.swp
+*.swo
+*~
+*.bak
+
+# OS-generated metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+__MACOSX/
